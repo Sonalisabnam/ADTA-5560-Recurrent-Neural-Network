@@ -1,0 +1,46 @@
+Gmail ID: amarajain2022
+Project ID: sonalisabnamadta5560
+Instance Name: deep-learning-vm-tf2 
+ZONE  us-south1-c 
+
+
+deep-learning-vm-tf2
+amarajain2022@gmail.com
+sonalisabnamadta5560
+
+-------- run on shell
+gcloud init
+
+gcloud compute config-ssh
+
+-------- run on shell
+gcloud compute ssh amarajain2022@deep-learning-vm-tf2 --project sonalisabnamadta5560 --zone us-south1-c
+
+gcloud compute ssh amarajain2022@deep-learning-vm-tf2 --project sonalisabnamadta5560 --zone us-south1-c
+
+----- run on putty
+jupyter notebook --port=8888
+
+----- new gcloud sdk
+gcloud compute ssh amarajain2022@deep-learning-vm-tf2 --project sonalisabnamadta5560 --zone us-south1-c -- -L 8000:localhost:8888
+
+
+http://localhost:8000
+
+http://localhost:8888/?token=497be8a680dc88052a71761beb9d8200eb4839b392dc5437
+
+http://localhost:8888/?token=497be8a680dc88052a71761beb9d8200eb4839b392dc5437
+
+
+ http://localhost:8888/?token=1011f7c3d16b163643a86e851c596c5a6d0be2444b5bec09
+------------------- Summer
+
+-----------cloud sdk
+gcloud compute ssh sonalisabnamsummer2024@deep-learning-vm-example --project sonalisabnamadta5550 --zone us-south1-c
+
+------------ putty
+jupyter notebook --port=8888
+
+------- new cloud sdk
+gcloud compute ssh sonalisabnamsummer2024@deep-learning-vm-example --project sonalisabnamadta5550 --zone us-south1-c -- -L 8000:localhost:8888
+

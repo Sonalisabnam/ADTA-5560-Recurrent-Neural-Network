@@ -1,0 +1,51 @@
+Gmail ID: amarajain2022
+Project ID: sonalisabnamadta5560
+Instance Name: deep-learning-vm-example
+ZONE  us-south1-c 
+
+instance name: deep-learning-vm-tf2
+
+export IMAGE_FAMILY="tf-ent-latest-cpu"
+export ZONE="us-south1-c"
+export DISK_TYPE="pd-standard"
+export INSTANCE_NAME="deep-learning-vm-tf2"
+export INSTANCE_TYPE="e2-standard-8"
+gcloud compute instances create $INSTANCE_NAME \
+--zone=$ZONE \
+--image-family=$IMAGE_FAMILY \
+--image-project=deeplearning-platform-release \
+--machine-type=$INSTANCE_TYPE \
+--boot-disk-type=$DISK_TYPE \
+--boot-disk-size=1024GB
+
+gcloud compute config-ssh 
+
+
+gcloud compute ssh amarajain2022@deep-learning-vm-example --project sonalisabnamadta5560 --zone us-south1-c
+
+jupyter notebook --port=8888
+
+gcloud compute ssh amarajain2022@deep-learning-vm-tf2 
+--project sonalisabnamadta5560 
+--zone us-south1-c
+
+gcloud compute ssh amarajain2022@deep-learning-vm-tf2 --project sonalisabnamadta5560 --zone us-south1-c
+
+-------------------------
+Commands to run on the putty shell
+
+ $ mkdir JP_NTBK
+
+
+http://localhost:8888/?token=bd9a8e179f7c0cf3aee551000b73b28f7d521d598b341f25
+
+gcloud compute ssh USER@Instance_Name 
+--project [PROJECT_ID]  
+--zone [ZONE 
+-- - L 8000:localhost:8888 
+
+gcloud compute ssh amarajain2022@deep-learning-vm-tf2 --project sonalisabnamadta5560 --zone us-south1-c -- -L 8000:localhost:8888 
+gcloud compute ssh sonalisabnamsummer2024@deep-learning-vm-example --project sonalisabnamadta5550 --zone us-south1-c -- -L 8000:localhost:8888
+
+
+http://localhost:8888/?token=d80f4b864fbc5162dfb4f43dd3caf17ed2376b03c48d38c0
